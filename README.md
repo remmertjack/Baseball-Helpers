@@ -16,3 +16,5 @@ These "helper" functions are designed to be as flexable as possible. Please see 
 * More things to come!
 
 For any inquires, please contact remmertjack@gmail.com
+
+[![HitCount](http://hits.dwyl.com/remmertjack/Baseball-Helpers.svg)](http://hits.dwyl.com/remmertjack/Baseball-Helpers)
