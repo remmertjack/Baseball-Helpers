@@ -13,9 +13,6 @@ These "helper" functions are designed to be as flexable as possible. Please see 
 
 ### Table of Contents
 * Aging Curves
-
-### For the Future
-* Web Scraper for Baseball Reference
-* Simple Clustering methods to implement
+* More things to come!
 
 For any inquires, please contact remmertjack@gmail.com
