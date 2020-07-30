@@ -13,6 +13,7 @@ These "helper" functions are designed to be as flexable as possible. Please see 
 
 ### Table of Contents
 * Aging Curves
+* FanGraphs Service Time
 * More things to come!
 
 For any inquires, please contact remmertjack@gmail.com
