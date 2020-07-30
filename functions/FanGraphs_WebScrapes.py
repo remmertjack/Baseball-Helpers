@@ -79,7 +79,7 @@ def get_bats_(name,f_id):
         err = "No Bats Throws webpage tag for "+str(f_id)+", Name: "+name
         return err
 
-def get_bats_(name,f_id):
+def get_throws_(name,f_id):
     time.sleep(3)
     # remove any periods such as those in Jr. or Sr.
     name = name.replace(".","")
