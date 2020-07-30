@@ -25,7 +25,7 @@ for index, player in df.iterrows():
     service_time = get_service_time(name,f_id)
     st.append(service_time)
     i+=1
-    if i % 50 ==0:
+    if i % mod_check ==0:
         # print progress
         progress = round(i/len(df)*100,1)
         print(progress+"% complete")
