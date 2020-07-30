@@ -10,4 +10,7 @@
   f_id = 11493
   get_service_time(name, f_id)
   # 7.15
+  
+  # OR in a pandas dataframe
+  df['service_time']=df[['name','f_id']].apply(lambda x: get_service_time(x['name'], x['f_id']), axis=1)
   ```
