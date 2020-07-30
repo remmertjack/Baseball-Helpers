@@ -1,5 +1,6 @@
 import bs4 as bs
 import urllib.request
+import time
 
 def get_service_time(name,f_id):
     time.sleep(5)
