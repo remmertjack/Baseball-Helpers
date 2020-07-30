@@ -1,21 +1,16 @@
-# Baseball-Helpers
-Designed to help those in need for quick, yet powerful analysis either in plotting Aging Curves, Web-Scraping data, or classifying players. Not designed for specific problems, but rather to help ease ad-hoc analysis and come up with initial ideas.
+# Baseball-Helpers: Functions
+### Designed to aide in preprocessing and data collection.
+***
 
-Why does this exist? Well necessity is the mother of invention. Hence, Baseball Helpers. Essentially, I got tired of creating ad-hoc processes to solve a current problem and thus turned them into general processes or as general as possible processes. 
-
-These "helper" functions are designed to be as flexable as possible. Please see each package's documentation for specific details.
-
-### List of packages used besides pandas and numpy
-* scipy
-* plotnine
-* sklearn
-* beautiful soup
-
-### Table of Contents
-* Aging Curves
-* FanGraphs Service Time
-* More things to come!
-
-For any inquires, please contact remmertjack@gmail.com
-
-[![HitCount](http://hits.dwyl.com/remmertjack/Baseball-Helpers.svg)](http://hits.dwyl.com/remmertjack/Baseball-Helpers)
+##### FanGraphs_ServiceTime (as of July 30th, 2020)
+  This function will webscrape the service time of a player from FanGraphs. For example, Manny Machado with Player Id 11493, has a service time of 7.15 as of April 30th, 2020. It requires the name and Player Id (from fangraphs of course). Requires `bs4` (*beautifulsoup4*) and `urllib.request` packages.
+  ```python
+  from Baseball-Helpers.functions.FanGraphs_ServiceTime import get_service_time
+  name = "Manny Machado"
+  f_id = 11493
+  get_service_time(name, f_id)
+  # 7.15
+  
+  # OR in a pandas dataframe
+  df['service_time']=df[['name','f_id']].apply(lambda x: get_service_time(x['name'], x['f_id']), axis=1)
+  ```
