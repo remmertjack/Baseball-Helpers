@@ -39,7 +39,7 @@ def get_service_time(name,f_id):
             # extract the integers
             ints = [int(s) for s in svt_html.split() if s.isdigit()]
             # we know the first value is the year and the second is number of days
-            service_time = ints[0] + ints[1]/365.25
+            service_time = ints[0] + ints[1]/172
             return service_time
     except:
         err = "No Service Time webpage tag for "+str(f_id)+", Name: "+name
