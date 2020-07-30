@@ -28,6 +28,6 @@ for index, player in df.iterrows():
     if i % mod_check ==0:
         # print progress
         progress = round(i/len(df)*100,1)
-        print(progress+"% complete")
+        print(str(progress)+"% complete")
         time.sleep(10)
   ```
