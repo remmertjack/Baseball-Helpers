@@ -1,5 +1,5 @@
 # Baseball-Helpers: Functions
-### Designed to aide in preprocessing or data collection.
+### Designed to aide in preprocessing and data collection.
 ***
 
 ##### FanGraphs_ServiceTime (as of July 30th, 2020)
