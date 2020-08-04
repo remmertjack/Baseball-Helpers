@@ -13,7 +13,7 @@ These "helper" functions are designed to be as flexable as possible. Please see 
 
 ### Table of Contents
 * Aging Curves
-* Functions (see below for list of functions)
+* Basic Functions
 * More things to come!
 
 ### Functions
