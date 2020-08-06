@@ -1,6 +1,5 @@
 # Baseball-Helpers: Aging Curves
-## Designed to aide in the creation of quick Aging Curves
-***
+*****
 
 This package is designed to create Aging Curves in Baseball or other sports for that matter if desired. Currently there is 1 type of aging curve based on the Delta Method, and the Z-score method is in development. Also, the user can only plot Aging Curves for an individual or list of individuals, but not within groups say Starters vs. Relivers or Infielders vs Outfielders. 
 
