@@ -9,7 +9,7 @@
   
   Given these are a webscraping functions I included a system sleep for 5 seconds when the function is first called. Additionally, since it is a webscraping function, it may be better to execute in a loop to control the system with sleeps and progress checkers.
   
-Basic Functionality:
+Basic Process:
   ```python
 from Baseball-Helpers.functions.FanGraphs_WebScrapes import myfunction
 name = "Manny Machado"
@@ -35,14 +35,15 @@ for index, player in df.iterrows():
         progress = round(i/len(df)*100,1)
         print(str(progress)+"% complete")
         time.sleep(10)
-  ```
-  
-###### get_service_time  
+```
+*****
+##### The Functions:
+###### * get_service_time  
   This function will webscrape the service time of a player from FanGraphs. For example, Manny Machado with Player Id 11493, has a service time of 7.326 as of April 30th, 2020. It requires the name and Player Id (from fangraphs of course).  
 
   The service time is the number of years + days/172. For example, Manny Machado with 7 years of service and 56 service days is 7 + 56/172. We divided by 172 because 172 service days is 1 service year.
   
    If the player has retired, Fangraphs removes their Service Time, which for the life me I cannot understand why, and the function will print `"No Service Time webpage tag for $id, Name: firstname-lastname"`.  Any tips on how to correct for this, please email me or comment down below!
  
-###### get_bats_ and get_throws_
+###### * get_bats_ & get_throws_
    Retireves the Batting and Throwing Handness of the player. For example, for Mike Trout with id of 10155, `get_bats_` will return R and `get_throws_` will return R.
