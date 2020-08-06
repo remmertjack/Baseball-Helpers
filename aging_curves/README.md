@@ -1,3 +1,7 @@
+# Baseball-Helpers: Aging Curves
+## Designed to aide in the creation of quick Aging Curves
+***
+
 This package is designed to create Aging Curves in Baseball or other sports for that matter if desired. Currently there is 1 type of aging curve based on the Delta Method, and the Z-score method is in development. Also, the user can only plot Aging Curves for an individual or list of individuals, but not within groups say Starters vs. Relivers or Infielders vs Outfielders. 
 
 The aging curve functions (delta_method and zscore_method) take an Id, a Stat, and an optional Weight argument. The Id, defined as playerid in the functions, is the unique identifier for each player in the dataset. The Stat is the statisitc we want to create an Aging Curve for such as AVG, SLG, wOBA, etc. The Weight is if we want to weight the statistic by some type of condition, such as Plate Appearances, Pitches, Innings, etc. You rarely do not want to not weight a statistic, as players who have more opporutnites effect the analysis.  The functions will return the aging curve data to be used in a plot or table along with the number of players sampled at each age.
