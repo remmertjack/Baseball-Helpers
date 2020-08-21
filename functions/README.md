@@ -43,7 +43,7 @@ for index, player in df.iterrows():
 
   The service time is the number of years + days/172. For example, Manny Machado with 7 years of service and 56 service days is 7 + 56/172. We divided by 172 because 172 service days is 1 service year.
   
-   If the player has retired, Fangraphs removes their Service Time, which for the life me I cannot understand why, and the function will print `"No Service Time webpage tag for $id, Name: firstname-lastname"`.  Any tips on how to correct for this, please email me or comment down below!
+   If the player has retired, Fangraphs removes their Service Time, which for the life me I cannot understand why, and the function will print `"No Service Time webpage tag for $id, Name: firstname-lastname"`.  Any tips on how to correct for this, please email me.
  
 ###### * get_bats_ & get_throws_
    Retireves the Batting and Throwing Handness of the player. For example, for Mike Trout with id of 10155, `get_bats_` will return R and `get_throws_` will return R.
