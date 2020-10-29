@@ -1,6 +1,5 @@
 # Baseball-Helpers: Functions
-## Designed to aide in preprocessing and data collection.
-***
+### Designed to aide in preprocessing and data collection.
 
 #### FanGraphs_WebScrapes (as of July 30th, 2020)
   This family of functions provides a lot of basic webscrapers for the FanGraphs site. For any of these functions, they require a Player Name and their FanGraphs Id. They also all work very much the same: request the url given the inputs of the function, find the desired data from any div and class tags, extract said data, and return the value. I may look into creating a wrapper function in which the user can select their desired data, like Service Time, Batting Style (R,L,S) and Throwing Style (R,L), to scrape, then the function queries the url and extracts the desired data.
